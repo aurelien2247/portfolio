@@ -1,0 +1,351 @@
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------Mise en place de la page de présentation-----------------------------------------*/
+/*---------------------------------------Bts SNIR------------------------------------------------------------*/
+/*----------------------------Réalisé par Aurélien Moignet---------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*---------------------------haut de la page ----------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+.nav-list {/* css de la liste bar de navigation */
+    color: black;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-item {/* css des sous partie de la barre de navigation */
+
+    height: auto;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style: none;
+}
+
+.nav-item a {
+    color: black;
+    letter-spacing: 1.2px;
+
+}
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+
+}
+header {
+    background: url("https://lycee-ledantec.fr/wp-content/uploads/2016/12/DSC9497-e1490887960982.jpg ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------body de la page------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+.menu {
+    display: flex;
+    height: 50px;
+}
+
+
+.item1 {
+    letter-spacing: 1.2px;
+    justify-content: center;
+    align-items: center;
+    font-family : 'Source Sans Pro', sans-serif ;
+    background-color: #2CA6C4;
+    color: white;
+}
+.item2 {
+    letter-spacing: 1.2px;
+    font-family : 'Source Sans Pro', sans-serif ;
+    background-color: #088CB2;
+}
+.item3 {
+    justify-content: left;
+    align-items: left;
+    letter-spacing: 1.2px;
+    padding-left: 3%;
+    color: white;
+    font-family : 'Source Sans Pro', sans-serif ;
+    background-color: #0563AD;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .item {
+        height: 50px;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------partie gauche de la page---------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+.titrepres{/*Grand titre*/
+    text-align: center;
+    color: #25b2c4;
+    font-weight: bold;
+    font-family : 'Source Sans Pro', sans-serif ;
+}
+.textecentre{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+}
+.ContenuListe{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+    list-style: none;
+}
+.video {
+    width: 400px;
+    height: 222px;
+    margin-left: 20%;
+}
+
+.item4 {
+    justify-content: left;
+    align-items: left;
+    width: 50%;
+    letter-spacing: 1.2px;
+    padding-left: -10px;
+    color: black;
+    font-family : 'Source Sans Pro', sans-serif ;
+    background-color: white;
+
+}
+@media screen and (max-width: 800px) {
+    .item4 {
+        justify-content: left;
+        align-items: left;
+        width: 100%;
+        letter-spacing: 1.2px;
+        padding-left: -10px;
+        color: black;
+        font-family : 'Source Sans Pro', sans-serif ;
+        background-color: white;
+
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------partie droite de la page---------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+.item5 {
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 0.5rem 2rem;
+    letter-spacing: 1.2px;
+    font-family : 'Source Sans Pro', sans-serif ;
+    background-color: #565151;
+    position: absolute;
+    left: 48.9%;
+}
+.item-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.menu2 {
+    display: flex;
+    height: 0px;
+}
+@media screen and (max-width: 800px) {
+    .menu2 {
+        flex-direction: column;
+        height: auto;
+    }
+    .item-center {
+        left: 0;
+        width: 50%;
+        letter-spacing: 1.2px;
+        padding-left: -10px;
+        color: black;
+        font-family : 'Source Sans Pro', sans-serif ;
+        background-color: #565151;
+    }
+    .item5 {
+        width: 100%;
+        height: auto;
+        color: white;
+        padding: 0.5rem 2rem;
+        letter-spacing: 1.2px;
+        font-family : 'Source Sans Pro', sans-serif ;
+        background-color: #565151;
+        left: 0;
+    }
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+
+}
+thead tr{
+    background-color: #ABE9EB;
+    text-align: center;
+    padding: 0.3%;
+    margin: 0.3%;
+
+
+}
+
+tbody td{
+    background: #25b2c4;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------troisieme partie de la page------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+#recrutement{
+    width: auto;/*96%*/
+    height: auto;/*90px*/
+    color: white;
+    margin-top: 5%;
+    letter-spacing: 1.2px;
+    font-family : 'Source Sans Pro', sans-serif ;
+    position: relative;
+    top: 1900px;
+    left: 0;
+    background-size: cover;
+    background-color: #2E07CA;
+}
+.item6{
+    width: auto;/*96%*/
+    height: auto;/*90px*/
+    color: white;
+    margin-top: 5%;
+    letter-spacing: 1.2px;
+    font-family : 'Source Sans Pro', sans-serif ;
+    position: relative;
+    top: 1900px;
+    left: 0;
+    background-size: cover;
+    background-color: #2E07CA;
+}
+.menu3{
+    background-color: #2E07CA;
+    display: flex;
+    height: 0px;
+}
+.img{
+    width: 20%;
+    padding-left: 40%;
+    padding-top: 0;
+}
+.img2 {
+    width: auto;
+    padding-left: 76.5%;
+    margin-top: -10%;
+}
+.titrepres2{
+    text-align: center;
+    color: #25b2c4;
+    font-weight: bold;
+    font-family : 'Source Sans Pro', sans-serif ;
+    margin-top: 0;
+
+}
+.textecentre2{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .item6 {
+        width: 100%;/*96%*/
+        height: auto;/*90px*/
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-size: cover;
+        background-color: #2E07CA;
+    }
+    .img2{
+        width: auto;
+        padding-left: 0;
+        margin-top: 0;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------footer---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+#footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 1.5rem 0;
+    letter-spacing: 1.2px;
+    font-family : 'Source Sans Pro', sans-serif ;
+    background-color: black;
+    position: relative;
+    top: 1900px;
+}
+.coordonees{/*coordonnées du lycée*/
+    height: auto;
+    margin-top: -3%;
+    text-align: left;
+    padding-left: 13%;
+    margin-right: auto;
+    width: 80%;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+}
+.qrcode{/*mise en place de l'image qrcode*/
+    width: 500px;
+    display: block;/*padding-right: 80%;*/
+    margin-top: -6%;/*-6*/
+}
+.label {/*mise en place de l'image Etablissement labélisé*/
+    width: auto;
+    /*display: right;*/
+    margin-top: -9%;
+}
+
+.copydesigne{/*mise en place du texte copyright et création*/
+    height: auto;
+    margin-top: -5%;
+    text-align: right;
+    padding-left: 12%;
+    margin-right: auto;
+    width: 80%;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+}
+@media screen and (max-width: 800px) {
+    .label{
+        margin-top: 15%
+    }
+    .copydesigne{
+        margin-top: -20%
+    }
+}
+

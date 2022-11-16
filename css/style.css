@@ -1,0 +1,259 @@
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------------------------Mise en place de la page principale----------------------------------------------*/
+/*--------------------------------------du Portfolio---------------------------------------------------------*/
+/*------------------------------------De Aurélien Moignet----------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+@font-face {/*import font*/
+    font-family: 'Semibold';
+    src: url('../font/GraphikSemibold.otf');
+    src: url('../font/GraphikSemibold.otf?#iefix') format('embedded-opentype'),
+    url('../font/GraphikSemibold.otf') format('woff'),
+    url('../font/GraphikSemibold.otf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+    font-family: 'Semibold';
+    color: white;
+}
+
+.img-lang{/*Image langue fr*/
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    bottom: 0;
+    left: 91%;
+    background-image: url(../image/flag_fr.jpg);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-color: transparent;
+}
+.img-lang a{/*Image langue fr*/
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    bottom: 0;
+    left: 91%;
+    height: 35px;
+    width: 45px;
+    background-size: 45px;
+    background-color: transparent;
+}
+.img-lang2{/*Image angl*/
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    bottom: 0;
+    left: 95%;
+    background-image: url(../image/flag_angl.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-color: transparent;
+}
+.img-lang2 a{/*Image angl*/
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    bottom: 0;
+    left: 95%;
+    height: 35px;
+    width: 46px;
+    background-size: 50px;
+    background-color: transparent;
+}
+
+.img-center{/*Image*/
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 35%;
+    background-image: url(../image/img-center.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.text-first{/*On montre le texte de base*/
+    opacity: 1;
+    position: fixed;
+    line-height: 110%;
+    width: 400px;
+    height: 90px;
+    font-size: 126px;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    background-color: transparent;
+    color: white;
+
+
+}
+.text-hover{/*On cache le second texte*/
+    position: fixed;
+    width: 600px;
+    height: 90px;
+    font-size: 126px;
+    line-height: 110%;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    background-color: transparent;
+    color: #ffffff;
+    display: none;
+}
+
+.button:hover span.text-first{/*On fais disparaitre le premier texte au passage de la souris*/
+    opacity: 0;
+    margin-left: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.button:hover span.text-hover{/*On fais apparaitre le second texte au passage de la souris*/
+    opacity: 1;
+    animation: slide 0.5s linear;
+    transition: all .8s cubic-bezier(0.2, 0.6, 0.2, 1);
+    display: inherit;
+    position: absolute;
+}
+.text-first-2{/*On montre le texte de base*/
+    opacity: 1;
+    line-height: 110%;
+    position: fixed;
+    width: 400px;
+    height: 90px;
+    font-size: 126px;
+    top: 38%;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    background-color: transparent;
+    color: #ea0f1e;
+
+}
+.text-hover-2{/*On cache le second texte*/
+    position: fixed;
+    width: 400px;
+    height: 90px;
+    font-size: 126px;
+    top: 38%;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    background-color: transparent;
+    color: #ea0f1e;
+    display: none;
+}
+.button-2:hover span.text-first-2{/*On fais disparaitre le premier texte au passage de la souris*/
+    opacity: 0;
+    margin-left: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.button-2:hover span.text-hover-2{/*On fais apparaitre le second texte au passage de la souris*/
+    opacity: 1;
+    animation: slide 0.5s linear;
+    transition: all .8s cubic-bezier(0.2, 0.6, 0.2, 1);
+    display: inherit;
+    position: absolute;
+}
+.text-first-3{/*On montre le texte de base*/
+    opacity: 1;
+    position: fixed;
+    width: 400px;
+    height: 90px;
+    font-size: 120px;
+    top: 56%;
+    right: 0;
+    bottom: 0;
+    left: 19%;
+    background-color: transparent;
+    color: #ea0f1e;
+
+}
+.text-hover-3{/*On cache le second texte*/
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    font-size: 120px;
+    top: 56%;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+    background-color: transparent;
+    color: #ea0f1e;
+    display: none;
+}
+.button-3:hover span.text-first-3{/*On fais disparaitre le premier texte au passage de la souris*/
+    opacity: 0;
+    margin-left: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.button-3:hover span.text-hover-3{/*On fais apparaitre le second texte au passage de la souris*/
+    opacity: 1;
+    animation: slide 0.5s linear;
+    transition: all .8s cubic-bezier(0.2, 0.6, 0.2, 1);
+    display: inherit;
+    position: absolute;
+}
+@keyframes slide {/*Animation slide + apparition du texte*/
+    0%{
+        left: 25%;
+        opacity: 0.1;
+    }
+    10%{
+        left: 24.5%;
+        opacity: 0.2;
+    }
+    20%{
+        left: 24%;
+        opacity: 0.3;
+    }
+    30%{
+        left: 23.5%;
+        opacity: 0.4;
+    }
+    40%{
+        left: 23%;
+        opacity: 0.5;
+    }
+    50%{
+        left: 22.5%;
+        opacity: 0.6;
+    }
+    60%{
+        left: 22%;
+        opacity: 0.7;
+    }
+    70%{
+        left: 21.5%;
+        opacity: 0.8;
+    }
+    80%{
+        left: 21%;
+        opacity: 0.8;
+    }
+    90%{
+        left: 20.5%;
+        opacity: 0.9;
+    }
+    100%{
+        left: 20%;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 800px) {
+    .img-center{
+        left: 0;
+    }
+}
